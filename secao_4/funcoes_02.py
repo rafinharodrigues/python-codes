@@ -44,6 +44,27 @@ def calculate(num):
 
     return mode
 
-numero = calculate(2)
-print(numero('quadruplicate'))
+# numero = calculate(2)
+# print(numero('quadruplicate'))
+
+
+# Função mais otimizada
+
+def multiplier(multiplicador):
+    
+    def calculate(num):
+        return multiplicador * num
+    
+    return calculate
+
+
+duplicate = multiplier(2)
+triplicate = multiplier(3)
+quadruplicate = multiplier(4)
+
+print(duplicate(3))
+print(triplicate(3))
+print(quadruplicate(3))
+
+
 

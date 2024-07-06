@@ -36,14 +36,14 @@ def duplicated(int_list):
             continue
 
         last_numbers = set()
-        dup_num = []
+        dup_num = None
         for number in list:
             if number in last_numbers:
-                dup_num.append(number)
-                continue
+                dup_num = number
+                break
             last_numbers.add(number)
         
-        print(f'{list} = ',dup_num[0])
+        print(f'{list} = ',dup_num)
 
 
 duplicated(lista_de_listas_de_inteiros)

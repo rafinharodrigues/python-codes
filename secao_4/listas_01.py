@@ -11,10 +11,9 @@ lista_soma  = [2, 4, 6, 8]
 """
 
 def sum_list(list1,list2):
-    max_interval = min(len(list1),len(list2))
     return [
-        list1[i] + list2[i]
-        for i in range(max_interval)
+        x + y
+        for x, y in zip(list1,list2)
     ]
 
 lista_a = [1, 2, 3, 4, 5, 6, 7]
